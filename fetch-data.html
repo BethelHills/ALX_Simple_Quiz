@@ -2,44 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Data Fetcher</title>
+    <title>User Data Display</title>
     <link rel="stylesheet" href="fetch-data.css">
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1>Data Fetcher</h1>
-            <p>Fetch and display data from various APIs</p>
-        </header>
-        
-        <main>
-            <div class="controls">
-                <button id="fetch-users" class="btn btn-primary">Fetch Users</button>
-                <button id="fetch-posts" class="btn btn-secondary">Fetch Posts</button>
-                <button id="fetch-comments" class="btn btn-success">Fetch Comments</button>
-                <button id="clear-data" class="btn btn-danger">Clear Data</button>
-            </div>
-            
-            <div class="loading" id="loading" style="display: none;">
-                <div class="spinner"></div>
-                <p>Loading data...</p>
-            </div>
-            
-            <div class="data-container">
-                <h2 id="data-title">Select a data type to fetch</h2>
-                <div id="data-content">
-                    <p class="placeholder">Click one of the buttons above to fetch data from the API.</p>
-                </div>
-            </div>
-            
-            <div class="error" id="error" style="display: none;">
-                <h3>Error</h3>
-                <p id="error-message"></p>
-            </div>
-        </main>
+    <div id="content">
+        <h1>User List</h1>
+        <div id="api-data">Loading user data...</div>
     </div>
-    
     <script src="fetch-data.js"></script>
 </body>
 </html>
